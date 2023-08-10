@@ -34,6 +34,13 @@ def get_image_download_link(img, filename, text):
 st.sidebar.title('Image Restoration')
 
 
+hide_github_icon ="""
+<style>
+ .css-ztfqz8.ef3psqc4 { display: none; }
+</style>
+"""
+st.markdown(hide_github_icon, unsafe_allow_html=True)
+
 # Specify canvas parameters in application
 uploaded_file = st.sidebar.file_uploader("Upload Image to restore:", type=["png", "jpg"])
 image = None
